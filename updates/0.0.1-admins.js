@@ -8,7 +8,7 @@
  */
 
 exports.create = {
-	Y: [
+	user: [
 		{ 'name.first': 'Admin', 'name.last': 'User', 'email': 'coobots@gmail.com', 'password': 'szsong100', 'isAdmin': true },
 	],
 };

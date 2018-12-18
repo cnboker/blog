@@ -6,8 +6,8 @@ require('dotenv').config();
 var keystone = require('keystone');
 
 keystone.init({
-	'name': 'blog',
-	'brand': 'blog',
+	'name': '网站优化',
+	'brand': '钢铁侠',
 
 	'less': 'public',
 	'static': 'public',
@@ -20,7 +20,7 @@ keystone.init({
 	'auto update': true,
 	'session': true,
 	'auth': true,
-	'user model': 'Y',
+	'user model': 'user',
 });
 keystone.import('models');
 keystone.set('locals', {
@@ -34,7 +34,7 @@ keystone.set('routes', require('./routes'));
 keystone.set('nav', {
 	posts: ['posts', 'post-categories'],
 	enquiries: 'enquiries',
-	ys: 'ys',
+	user: 'user',
 });
 
 
